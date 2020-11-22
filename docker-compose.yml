@@ -1,0 +1,22 @@
+version: "3"
+services:
+  # api-server:
+  #   build:
+  #     context: ./server
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "5000:5000"
+  #   container_name: api-server
+  #   volumes:
+  #     - ./server:/usr/src/app/server
+  #     - /usr/src/app/server/node_modules
+  da-vue-client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    container_name: da-vue-client
+    volumes:
+      - ./client:/usr/src/app/client
+      - /usr/src/app/client/node_modules

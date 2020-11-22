@@ -1,0 +1,5 @@
+@mixin setImageStyles($url, $height) {
+  height: $height;
+  position: relative;
+  background: url($url) no-repeat center center/cover;
+}
