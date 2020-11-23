@@ -86,7 +86,7 @@ export default {
   }
 
   .grid {
-    gap: 4rem 2rem;
+    gap: 2rem;
   }
 }
 
