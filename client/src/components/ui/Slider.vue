@@ -3,7 +3,6 @@
     :per-page="1"
     v-model="index"
     :mouse-drag="true"
-    :touchDrag="true"
     :paginationEnabled="false"
     class="carousel"
   >

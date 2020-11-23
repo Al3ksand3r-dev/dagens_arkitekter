@@ -158,7 +158,6 @@ export default {
     color: #fff;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 0 20px;
     max-width: 1200px;
     position: relative;
     align-items: center;
@@ -170,7 +169,6 @@ export default {
 
       @include mediaQ(768px) {
         margin: 0;
-        padding: 0;
       }
     }
 
