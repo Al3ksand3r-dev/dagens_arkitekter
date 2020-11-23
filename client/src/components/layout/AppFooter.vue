@@ -95,7 +95,11 @@ export default {
           display: block;
           font-size: 14px;
           margin: 0 0 15px;
+          transition: 0.3s;
           text-decoration: none;
+          &:hover {
+            padding-left: 0.25rem;
+          }
         }
       }
     }
