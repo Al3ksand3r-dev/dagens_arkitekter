@@ -3,3 +3,19 @@
   position: relative;
   background: url($url) no-repeat center center/cover;
 }
+
+@mixin slideInLeft($duration) {
+  animation: slideInLeft $duration ease;
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+  }
+}

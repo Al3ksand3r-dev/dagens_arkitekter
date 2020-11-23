@@ -20,7 +20,7 @@ export default {
   z-index: 1;
   width: 100%;
   margin: auto;
-  max-width: 1200px;
+  max-width: 1440px;
   padding: 1rem 0;
   position: absolute;
 

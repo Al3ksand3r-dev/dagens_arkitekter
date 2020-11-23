@@ -10,11 +10,7 @@
         hög och bred kompetens inom arkitektur och projektering.
       </p>
     </section>
-    <img
-      class="article__image"
-      :src="require('@/assets/article/interior-natural-sun.jpg')"
-      alt="interior design"
-    />
+    <div class="article__image"></div>
   </article>
 </template>
 
@@ -26,11 +22,6 @@ export default {
 
 <style lang="scss" scoped>
 .article {
-  width: 100%;
-  margin: auto;
-  max-width: 1024px;
-  padding: 70px 1rem 0;
-
   &__text {
     margin: 0 0 35px;
     h1 {
@@ -50,47 +41,16 @@ export default {
         background: #000;
       }
     }
-    h2 {
-      font-size: 27px;
-      margin: 0 0 50px;
-      font-weight: 900;
-      text-transform: uppercase;
-    }
     p {
       font-size: 16px;
     }
   }
 
   &__image {
-    display: block;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .article {
-    padding: 200px 1rem 0;
-
-    &__text {
-      margin: 2rem 0 0;
-      h2 {
-        font-size: 31px;
-      }
-    }
-  }
-  .grid {
-    gap: 0 2rem;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .article {
-    &__text {
-      h2 {
-        font-size: 41px;
-      }
-    }
+    @include setImageStyles(
+      "../../assets/article/interior-natural-sun.jpg",
+      600px
+    );
   }
 }
 </style>

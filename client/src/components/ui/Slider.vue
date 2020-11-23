@@ -56,12 +56,16 @@ export default {
       z-index: 1;
       margin: auto;
       color: #fff;
+      transition: 0.3s;
       padding: 0 1rem;
-      max-width: 1024px;
+      max-width: 1200px;
       text-shadow: 0 0 5px rgba(#000, 0.3);
-
       h1 {
         margin: 0 0 1rem;
+      }
+
+      p {
+        font-size: 16px;
       }
     }
 

@@ -1,1 +1,35 @@
+@media screen and (min-width: 768px) {
+  .article {
+    padding: 200px 1rem 0;
 
+    &__text {
+      margin: 2rem 0 0;
+      h2 {
+        font-size: 31px;
+      }
+    }
+  }
+  .grid {
+    gap: 0 2rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    .article {
+      &__image {
+        width: 400px;
+        justify-self: flex-end;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .article {
+    &__image,
+    &__text {
+      h2 {
+        font-size: 41px;
+        margin-bottom: 6rem;
+      }
+    }
+  }
+}

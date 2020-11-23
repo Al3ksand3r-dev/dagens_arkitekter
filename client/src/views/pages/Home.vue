@@ -19,6 +19,7 @@
       />
     </app-header>
     <About />
+    <Services />
   </div>
 </template>
 
@@ -26,12 +27,14 @@
 import Slider from "@/components/ui/Slider.vue";
 import AppHeader from "@/components/layout/AppHeader.vue";
 import About from "@/components/articles/About.vue";
+import Services from "@/components/articles/Services.vue";
 export default {
   name: "Home",
   components: {
     Slider,
     AppHeader,
     About,
+    Services,
   },
 };
 </script>
