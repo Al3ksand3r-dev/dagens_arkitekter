@@ -20,6 +20,7 @@ export default {
 <style lang="scss" scoped>
 .card {
   z-index: 1;
+  width: 100%;
   margin: auto;
   display: flex;
   height: 400px;

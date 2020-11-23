@@ -87,8 +87,13 @@ export default {
 
   .grid {
     gap: 2rem;
+    padding: 0 1rem;
     max-width: 1200px;
     margin: -8rem auto 0;
+
+    @include mediaQ(1200px) {
+      padding: 0;
+    }
   }
 }
 
