@@ -13,31 +13,43 @@
     </div>
     <div class="grid">
       <Card
+        data-aos="fade-up"
+        data-aos-delay="90"
         vectorIcon="lnr lnr-apartment"
         title="Boende"
         description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
       />
       <Card
+        data-aos="fade-up"
+        data-aos-delay="70"
         vectorIcon="lnr lnr-heart-pulse"
         title="Vård & Sjukhus"
         description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
       />
       <Card
+        data-aos="fade-up"
+        data-aos-delay="50"
         vectorIcon="lnr lnr-graduation-hat"
         title="Lärandemiljöer"
         description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
       />
       <Card
+        data-aos="fade-up"
+        data-aos-delay="110"
         vectorIcon="lnr lnr-users"
         title="Handel, Kultur & Fritid"
         description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
       />
       <Card
+        data-aos="fade-up"
+        data-aos-delay="130"
         vectorIcon="lnr lnr-apartment"
         title="Kontor & Industri"
         description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
       />
       <Card
+        data-aos="fade-up"
+        data-aos-delay="150"
         vectorIcon="lnr lnr-dinner"
         title="Turism & Restaurang"
         description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
@@ -89,7 +101,7 @@ export default {
     gap: 2rem;
     padding: 0 1rem;
     max-width: 1200px;
-    margin: -8rem auto 0;
+    margin: -6rem auto 0;
 
     @include mediaQ(1200px) {
       padding: 0;

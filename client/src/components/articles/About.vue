@@ -1,11 +1,11 @@
 <template>
   <article class="article grid">
     <section class="article__text">
-      <h1>Om oss</h1>
-      <h2>
+      <h1 data-aos="fade-up" data-aos-delay="60">Om oss</h1>
+      <h2 data-aos="fade-up" data-aos-delay="80">
         Vi erbjuder våra kunder helhetslösningar från idé till verklighet.
       </h2>
-      <p>
+      <p data-aos="fade-up" data-aos-offset="-100" data-aos-delay="100">
         Vi är duktiga arkitekter och ingenjörer. Idag kan vi erbjuda våra kunder
         hög och bred kompetens inom arkitektur och projektering.
       </p>

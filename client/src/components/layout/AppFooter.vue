@@ -94,6 +94,7 @@ export default {
   padding: 6rem 1rem 0;
   justify-content: space-between;
   @include setImageStyles("../../assets/showcase/footer-showcase.jpg", 600px);
+  background-attachment: fixed;
   &::before {
     background: rgba(#000, 0.85);
   }
@@ -157,6 +158,7 @@ export default {
     color: #fff;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 0 20px;
     max-width: 1200px;
     position: relative;
     align-items: center;
@@ -168,6 +170,7 @@ export default {
 
       @include mediaQ(768px) {
         margin: 0;
+        padding: 0;
       }
     }
 
