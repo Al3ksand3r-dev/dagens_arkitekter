@@ -23,7 +23,7 @@ export default {
 <style lang="scss" scoped>
 .article {
   &__text {
-    margin: 0 0 35px;
+    margin: 0 0 22px;
     h1 {
       display: flex;
       font-size: 14px;
@@ -41,6 +41,11 @@ export default {
         background: #000;
       }
     }
+
+    h2 {
+      margin: 0 0 35px;
+    }
+
     p {
       font-size: 16px;
     }
