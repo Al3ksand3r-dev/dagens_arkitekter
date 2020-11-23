@@ -1,3 +1,4 @@
+const path = require("path");
 module.exports = {
   css: {
     loaderOptions: {
@@ -9,4 +10,5 @@ module.exports = {
       },
     },
   },
+  outputDir: path.resolve(path.join(__dirname, "../api/public")),
 };
