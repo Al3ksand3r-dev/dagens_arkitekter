@@ -1,15 +1,15 @@
 version: "3"
 services:
-  # api-server:
-  #   build:
-  #     context: ./server
-  #     dockerfile: Dockerfile
-  #   ports:
-  #     - "5000:5000"
-  #   container_name: api-server
-  #   volumes:
-  #     - ./server:/usr/src/app/server
-  #     - /usr/src/app/server/node_modules
+  api-server:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    container_name: api-api
+    volumes:
+      - ./api:/usr/src/app/api
+      - /usr/src/app/api/node_modules
   da-vue-client:
     build:
       context: ./client
