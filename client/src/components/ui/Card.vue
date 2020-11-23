@@ -33,7 +33,7 @@ export default {
 
   span {
     font-size: 3rem;
-    margin: 0 0 42px;
+    margin: 0 0 20px;
   }
 
   &__title {

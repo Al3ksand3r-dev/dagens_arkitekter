@@ -9,39 +9,39 @@
             projektering & rådgivning med 2D & 3D ritningar inom...
           </h2>
         </section>
-        <div class="grid">
-          <Card
-            vectorIcon="lnr lnr-apartment"
-            title="Boende"
-            description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-          />
-          <Card
-            vectorIcon="lnr lnr-heart-pulse"
-            title="Vård & Sjukhus"
-            description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-          />
-          <Card
-            vectorIcon="lnr lnr-graduation-hat"
-            title="Lärandemiljöer"
-            description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-          />
-          <Card
-            vectorIcon="lnr lnr-users"
-            title="Handel, Kultur & Fritid"
-            description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-          />
-          <Card
-            vectorIcon="lnr lnr-apartment"
-            title="Kontor & Industri"
-            description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-          />
-          <Card
-            vectorIcon="lnr lnr-dinner"
-            title="Turism & Restaurang"
-            description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-          />
-        </div>
       </div>
+    </div>
+    <div class="grid">
+      <Card
+        vectorIcon="lnr lnr-apartment"
+        title="Boende"
+        description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      />
+      <Card
+        vectorIcon="lnr lnr-heart-pulse"
+        title="Vård & Sjukhus"
+        description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      />
+      <Card
+        vectorIcon="lnr lnr-graduation-hat"
+        title="Lärandemiljöer"
+        description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      />
+      <Card
+        vectorIcon="lnr lnr-users"
+        title="Handel, Kultur & Fritid"
+        description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      />
+      <Card
+        vectorIcon="lnr lnr-apartment"
+        title="Kontor & Industri"
+        description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      />
+      <Card
+        vectorIcon="lnr lnr-dinner"
+        title="Turism & Restaurang"
+        description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      />
     </div>
   </div>
 </template>
@@ -87,6 +87,8 @@ export default {
 
   .grid {
     gap: 2rem;
+    max-width: 1200px;
+    margin: -8rem auto 0;
   }
 }
 

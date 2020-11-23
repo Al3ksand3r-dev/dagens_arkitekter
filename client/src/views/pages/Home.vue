@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <app-header>
       <Slider
         :images="[
