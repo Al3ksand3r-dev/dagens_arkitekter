@@ -176,6 +176,7 @@ export default {
       width: 100%;
       display: flex;
       list-style: none;
+      padding: 0 0 20px;
       &__link-item {
         padding: 0 25px 0 0;
         i {
@@ -192,6 +193,7 @@ export default {
       }
 
       @include mediaQ(768px) {
+        padding: 0;
         width: auto;
       }
     }
