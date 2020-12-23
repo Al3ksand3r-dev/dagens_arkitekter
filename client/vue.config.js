@@ -6,6 +6,8 @@ module.exports = {
         prependData: `
             @import "@/scss/partials/_variables.scss";
             @import "@/scss/partials/_mixins.scss";
+            @import "@/scss/mixins/_breakpoints.scss";
+            @import "@/scss/mixins/_mediaQueries.scss";
           `,
       },
     },

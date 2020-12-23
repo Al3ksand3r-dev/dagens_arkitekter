@@ -6,6 +6,7 @@ import VueCarousel from "vue-carousel";
 import VueCompositionAPI from "@vue/composition-api";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "animate.css";
 
 Vue.use(VueCompositionAPI);
 Vue.use(VueCarousel);

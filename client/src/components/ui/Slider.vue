@@ -3,7 +3,12 @@
     :per-page="1"
     v-model="index"
     :mouse-drag="true"
-    :paginationEnabled="false"
+    :paginationEnabled="true"
+    paginationPosition="bottom-overlay"
+    :navigationEnabled="true"
+    resistanceCoef="0"
+    navigationNextLabel="<span class='lnr lnr-chevron-right'></span>"
+    navigationPrevLabel="<span class='lnr lnr-chevron-left'></span>"
     class="carousel"
   >
     <slide
@@ -17,7 +22,12 @@
           ')',
       }"
     >
-      <div class="carousel__item__content">
+      <div
+        class="carousel__item__content"
+        :class="{
+          'animate__animated animate__fadeInLeft animate__fast': idx == index,
+        }"
+      >
         <h1>{{ image.title }}</h1>
         <p>{{ image.text }}</p>
       </div>
@@ -39,10 +49,50 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .carousel {
   width: 100%;
   height: 100vh;
+  position: relative;
+
+  .VueCarousel-navigation {
+    display: none;
+  }
+
+  @include xl() {
+    .VueCarousel-navigation {
+      top: 50%;
+      left: 50%;
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+
+      &-button {
+        font-size: 60px;
+        outline: none !important;
+        color: #ccc !important;
+      }
+
+      &-prev {
+        left: -690px !important;
+      }
+      &-next {
+        right: -690px !important;
+      }
+    }
+  }
+
+  .VueCarousel-dot {
+    outline: none !important;
+    padding: 2px !important;
+    background: rgba(#fff, 0.2) !important;
+    margin: 0 10px 50px !important;
+    box-shadow: 0 0 10px rgba(#000, 0.3) !important;
+
+    &--active {
+      background: rgba(#fff, 0.8) !important;
+    }
+  }
 
   &__item {
     height: 100vh;
@@ -57,9 +107,10 @@ export default {
       z-index: 1;
       margin: auto;
       color: #fff;
-      transition: 0.3s;
       padding: 0 1rem;
+      transition: 0.3s;
       max-width: 1200px;
+      animation-delay: 0.3s;
       text-shadow: 0 0 5px rgba(#000, 0.3);
       h1 {
         margin: 0 0 1rem;
