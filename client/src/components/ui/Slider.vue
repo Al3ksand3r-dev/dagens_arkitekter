@@ -53,6 +53,7 @@ export default {
     background-position: center center;
 
     &__content {
+      width: 100%;
       z-index: 1;
       margin: auto;
       color: #fff;
@@ -62,10 +63,14 @@ export default {
       text-shadow: 0 0 5px rgba(#000, 0.3);
       h1 {
         margin: 0 0 1rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
       }
 
       p {
+        width: 100%;
         font-size: 16px;
+        max-width: 550px;
       }
     }
 
@@ -92,7 +97,7 @@ export default {
     &__item {
       &__content {
         h1 {
-          font-size: 85px;
+          font-size: 60px;
         }
       }
     }

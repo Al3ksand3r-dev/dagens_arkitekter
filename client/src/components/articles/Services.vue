@@ -51,7 +51,7 @@
         data-aos="fade-up"
         data-aos-delay="150"
         vectorIcon="lnr lnr-dinner"
-        title="Turism & Restaurang"
+        title="Hotell & Restaurang"
         description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
       />
     </div>

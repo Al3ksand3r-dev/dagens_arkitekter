@@ -39,6 +39,7 @@ export default {
 
   &__title {
     font-size: 20px;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
     &::before {
       display: none;
