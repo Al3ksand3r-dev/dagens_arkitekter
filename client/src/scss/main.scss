@@ -2,3 +2,7 @@
 @import "partials/font";
 @import "partials/custom";
 @import "partials/mediaQueries";
+
+// Mixins
+@import "mixins/breakpoints";
+@import "mixins/mediaQueries";
