@@ -3,7 +3,10 @@
     <router-link to="/" class="navbar__site-link">
       <img :src="require('@/assets/logo/DA-logo.png')" alt="site logo" />
     </router-link>
-    <div class="navbar__hamburger-icon">
+    <div
+      class="navbar__hamburger-icon"
+      @click="$store.commit('TOGGLE_SIDEBAR')"
+    >
       <div />
       <div />
       <div />

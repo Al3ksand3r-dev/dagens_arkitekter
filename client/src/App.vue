@@ -1,5 +1,9 @@
 <template>
-  <div id="app">
+  <div
+    id="app"
+    :class="{ change: $store.state.isOpen }"
+    @click.self="$store.commit('TOGGLE_SIDEBAR')"
+  >
     <app-bar />
     <app-sidebar />
     <router-view />

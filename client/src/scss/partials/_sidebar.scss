@@ -6,12 +6,22 @@
   height: 100%;
   position: fixed;
   background: #fff;
+  transform: translate(100%);
 
   &__close-btn {
-    top: -15px;
-    left: -40px;
-    color: #fff;
-    font-size: 50px;
-    position: absolute;
+    display: none;
+  }
+  &.change {
+    transition: all 0.3s ease;
+    transform: translate(0);
+
+    &__close-btn & {
+      top: -10px;
+      left: -45px;
+      color: #fff;
+      font-size: 50px;
+      position: absolute;
+      display: block;
+    }
   }
 }
