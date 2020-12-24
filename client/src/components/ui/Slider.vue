@@ -6,7 +6,7 @@
     :paginationEnabled="true"
     paginationPosition="bottom-overlay"
     :navigationEnabled="true"
-    resistanceCoef="0"
+    :resistanceCoef="0"
     navigationNextLabel="<span class='lnr lnr-chevron-right'></span>"
     navigationPrevLabel="<span class='lnr lnr-chevron-left'></span>"
     class="carousel"

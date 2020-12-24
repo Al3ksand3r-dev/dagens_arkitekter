@@ -1,0 +1,21 @@
+.navigation-list {
+  height: 100%;
+  &-flex {
+    display: flex;
+    align-items: flex-end;
+  }
+  &-col {
+    flex-direction: column;
+  }
+  &-vCenter {
+    justify-content: center;
+  }
+
+  &__link {
+    color: #000;
+    display: block;
+    margin: 10px 0;
+    padding: 5px 10px 5px 0;
+    text-decoration: none;
+  }
+}
