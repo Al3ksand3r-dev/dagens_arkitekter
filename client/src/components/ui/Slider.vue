@@ -24,9 +24,12 @@
     >
       <div
         class="carousel__item__content"
-        :class="{
-          'animate__animated animate__fadeInLeft animate__fast': idx == index,
-        }"
+        :class="[
+          {
+            'animate__animated animate__fadeInLeft animate__fast': idx == index,
+          },
+          'hidden',
+        ]"
       >
         <h1>{{ image.title }}</h1>
         <p>{{ image.text }}</p>
@@ -112,6 +115,12 @@ export default {
       max-width: 1200px;
       animation-delay: 0.3s;
       text-shadow: 0 0 5px rgba(#000, 0.3);
+      &.hidden {
+        display: none;
+      }
+      &.animate__fadeInLeft {
+        display: block;
+      }
       h1 {
         margin: 0 0 1rem;
         letter-spacing: 2px;
