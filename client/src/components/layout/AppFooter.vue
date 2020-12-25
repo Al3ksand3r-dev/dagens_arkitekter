@@ -46,19 +46,19 @@ export default {
   setup() {
     const links = ref([
       {
-        url: "about",
+        url: "About",
         label: "Om oss",
       },
       {
-        url: "services",
+        url: "Services",
         label: "Våra tjänster",
       },
       {
-        url: "permit",
+        url: "Permits",
         label: "Bygglov",
       },
       {
-        url: "contact",
+        url: "Contact",
         label: "Kontakta oss",
       },
     ]);
