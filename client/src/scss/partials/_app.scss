@@ -9,6 +9,10 @@
       height: 100%;
       position: fixed;
       background: rgba(#000, 0.5);
+
+      @include lg() {
+        display: none;
+      }
     }
   }
 }

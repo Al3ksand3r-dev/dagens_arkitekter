@@ -1,6 +1,6 @@
 .navbar {
   &__hamburger-icon {
-    @include md() {
+    @include lg() {
       display: none;
     }
   }
