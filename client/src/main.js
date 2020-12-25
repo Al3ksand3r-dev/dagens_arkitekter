@@ -9,7 +9,9 @@ import "aos/dist/aos.css";
 import "animate.css";
 import VueScrollTo from "vue-scrollto";
 
-Vue.use(VueScrollTo);
+Vue.use(VueScrollTo, {
+  offset: -50,
+});
 Vue.use(VueCompositionAPI);
 Vue.use(VueCarousel);
 Vue.config.productionTip = false;

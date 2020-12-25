@@ -1,6 +1,6 @@
 <template>
-  <article class="article grid" id="about">
-    <section class="article__text">
+  <article class="article grid">
+    <section class="article__text" id="about">
       <h1 data-aos="fade-up" data-aos-delay="60">Om oss</h1>
       <h2 data-aos="fade-up" data-aos-delay="80">
         Vi erbjuder våra kunder helhetslösningar från idé till verklighet.

@@ -16,7 +16,21 @@
             v-for="link in links"
             :key="link.label"
           >
-            <router-link :to="{ name: link.url }">{{ link.label }}</router-link>
+            <a
+              href="#"
+              v-scroll-to="link.hash"
+              v-if="link.elName"
+              @click="$store.state.isOpen && $store.commit('TOGGLE_SIDEBAR')"
+              >{{ link.elName }}</a
+            >
+            <router-link
+              v-else
+              :to="{ name: link.url }"
+              @click.native="
+                $store.state.isOpen && $store.commit('TOGGLE_SIDEBAR')
+              "
+              >{{ link.label }}</router-link
+            >
           </li>
         </ul>
       </section>
@@ -46,12 +60,12 @@ export default {
   setup() {
     const links = ref([
       {
-        url: "About",
-        label: "Om oss",
+        elName: "Om oss",
+        hash: "#about",
       },
       {
-        url: "Services",
-        label: "Våra tjänster",
+        elName: "Våra tjänster",
+        hash: "#services",
       },
       {
         url: "Permits",

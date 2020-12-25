@@ -1,8 +1,8 @@
 <template>
   <div class="article">
-    <div class="article__image backdrop" id="services">
+    <div class="article__image backdrop">
       <div class="article__image__content">
-        <section class="article__image__text">
+        <section class="article__image__text" id="services">
           <h1>Våra tjänster</h1>
           <h2>
             Med stort intresse och engagemang erbjuder vi våra kunder

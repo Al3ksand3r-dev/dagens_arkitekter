@@ -6,15 +6,15 @@
       <a
         href="#"
         v-scroll-to="link.hash"
-        v-show="link.scrollTo"
+        v-if="link.elName"
         class="navigation-list__link"
         @click="$store.state.isOpen && $store.commit('TOGGLE_SIDEBAR')"
         >{{ link.elName }}</a
       >
       <router-link
+        v-else
         class="navigation-list__link"
         :to="{ name: link.url }"
-        v-show="!link.elName"
         @click.native="$store.state.isOpen && $store.commit('TOGGLE_SIDEBAR')"
         >{{ link.label }}</router-link
       >
@@ -29,13 +29,11 @@ export default {
   setup() {
     const links = ref([
       {
-        scrollTo: true,
         elName: "Om oss",
         hash: "#about",
       },
       {
         elName: "Våra tjänster",
-        scrollTo: true,
         hash: "#services",
       },
       {
