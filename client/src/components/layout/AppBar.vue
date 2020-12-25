@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar">
+  <nav class="navbar" :class="{ 'navbar--change': $store.state.isOpen }">
     <router-link to="/" class="navbar__site-link">
       <img :src="require('@/assets/logo/DA-logo.png')" alt="site logo" />
     </router-link>
