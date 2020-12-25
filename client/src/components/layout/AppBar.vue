@@ -11,11 +11,14 @@
       <div />
       <div />
     </div>
+    <app-links class="navigation-list--desktop" />
   </nav>
 </template>
 
 <script>
+import AppLinks from "../ui/AppLinks.vue";
 export default {
+  components: { AppLinks },
   name: "AppBar",
 };
 </script>

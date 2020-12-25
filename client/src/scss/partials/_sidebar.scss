@@ -8,6 +8,10 @@
   background: #fff;
   transform: translate(-100%);
 
+  @include md() {
+    display: none;
+  }
+
   &.change {
     transition: all 0.3s ease;
     transform: translate(0);

@@ -1,5 +1,5 @@
 <template>
-  <article class="article grid">
+  <article class="article grid" id="about">
     <section class="article__text">
       <h1 data-aos="fade-up" data-aos-delay="60">Om oss</h1>
       <h2 data-aos="fade-up" data-aos-delay="80">

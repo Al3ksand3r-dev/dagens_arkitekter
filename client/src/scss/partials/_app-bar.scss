@@ -1,4 +1,9 @@
 .navbar {
+  &__hamburger-icon {
+    @include md() {
+      display: none;
+    }
+  }
   &--change & {
     &__hamburger-icon {
       div {
