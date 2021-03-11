@@ -38,7 +38,7 @@ export default {
       },
       {
         url: "Permits",
-        label: "Bygglov",
+        label: "Hemsida",
       },
       {
         url: "Contact",

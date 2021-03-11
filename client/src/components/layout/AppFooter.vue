@@ -3,10 +3,6 @@
     <main class="footer__content">
       <section class="footer__content__header">
         <img :src="require('@/assets/logo/DA-logo.png')" alt="footer logo" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
-          fugit.
-        </p>
       </section>
       <section class="footer__content__links">
         <h1>Snabblänkar</h1>
