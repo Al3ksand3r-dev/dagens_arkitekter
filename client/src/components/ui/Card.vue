@@ -2,7 +2,6 @@
   <div class="card">
     <span :class="vectorIcon"></span>
     <h1 class="card__title">{{ title }}</h1>
-    <p class="card__description">{{ description }}</p>
   </div>
 </template>
 
@@ -12,7 +11,6 @@ export default {
   props: {
     vectorIcon: String,
     title: String,
-    description: String,
   },
 };
 </script>

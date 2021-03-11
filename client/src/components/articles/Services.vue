@@ -17,42 +17,36 @@
         data-aos-delay="90"
         vectorIcon="lnr lnr-apartment"
         title="Boende"
-        description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
       />
       <Card
         data-aos="fade-up"
         data-aos-delay="70"
         vectorIcon="lnr lnr-heart-pulse"
         title="Vård & Sjukhus"
-        description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
       />
       <Card
         data-aos="fade-up"
         data-aos-delay="50"
         vectorIcon="lnr lnr-graduation-hat"
         title="Lärandemiljöer"
-        description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
       />
       <Card
         data-aos="fade-up"
         data-aos-delay="110"
         vectorIcon="lnr lnr-users"
         title="Handel, Kultur & Fritid"
-        description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
       />
       <Card
         data-aos="fade-up"
         data-aos-delay="130"
         vectorIcon="lnr lnr-apartment"
         title="Kontor & Industri"
-        description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
       />
       <Card
         data-aos="fade-up"
         data-aos-delay="150"
         vectorIcon="lnr lnr-dinner"
         title="Hotell & Restaurang"
-        description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
       />
     </div>
   </div>
@@ -77,7 +71,9 @@ export default {
 
   &__image {
     padding: 8rem 1rem 4rem;
+    height: 580px;
     @include setImageStyles("../../assets/article/interior-wood.jpg", 580px);
+    // background-color: rgb(26, 26, 26);
 
     &__content {
       margin: auto;

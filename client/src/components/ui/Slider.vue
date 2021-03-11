@@ -129,8 +129,8 @@ export default {
 
       p {
         width: 100%;
-        font-size: 16px;
-        max-width: 550px;
+        font-size: 23px;
+        max-width: 650px;
       }
     }
 

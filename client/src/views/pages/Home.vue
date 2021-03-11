@@ -7,13 +7,26 @@
             url: 'main-showcase-first',
             title: 'Dagens Arkitekter',
             text:
-              'Dagens Arkitekter är ett modernt företag som tar fram praktiska och innovativa lösningar anpassade till livsstil och miljö. Vi tar stort ansvar och skapar framtiden för dagens samhälle.',
+              'Dagens Arkitekter är ett modernt företag som tar fram praktiska och innovativa lösningar anpassade till livsstil och miljö.',
           },
           {
             url: 'main-showcase-second',
             title: 'Projektering & Rådgivning',
             text:
               'Dagens Arkitekter utvecklar tillsammans mer er unika och trivsamma miljöer för människor att växa i.',
+          },
+          {
+            url: 'main-showcase-third',
+            title: 'Försäljningsmaterial',
+            text: 'Exteriör & interiör - 2D & 3D bilder.',
+          },
+          {
+            url: 'main-showcase-fourth',
+            title: 'Hemsida',
+            text: 'Projektsida med solstudie & bostadsväljare.',
+          },
+          {
+            url: 'main-showcase-fifth',
           },
         ]"
       />
