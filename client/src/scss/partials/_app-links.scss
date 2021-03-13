@@ -1,5 +1,8 @@
 .navigation-list {
+  $root: &;
+
   height: 100%;
+  list-style: none;
   &--flex {
     display: flex;
   }
@@ -10,6 +13,36 @@
     justify-content: center;
   }
 
+  &__sub-menu {
+    background: #eee;
+    height: auto;
+    padding: 10px;
+
+    @include lg() {
+      position: absolute;
+      display: none;
+      right: 0;
+      width: 300px;
+      border-radius: 2px;
+      ::after {
+        content: " ";
+        position: absolute;
+        bottom: 100%; /* At the top of the tooltip */
+        right: 25px;
+        margin-left: -5px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent #fff transparent;
+      }
+    }
+
+    #{$root}__link {
+      color: #222;
+      font-size: 14px;
+      text-transform: initial;
+    }
+  }
+
   &__link {
     color: #000;
     display: block;
@@ -17,6 +50,17 @@
     padding: 5px 0 5px 10px;
     text-decoration: none;
   }
+
+  &__sub-link {
+    position: relative;
+
+    &:hover {
+      #{$root}__sub-menu {
+        display: block;
+      }
+    }
+  }
+
   &--desktop {
     display: none;
     @include lg() {
