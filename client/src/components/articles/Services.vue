@@ -1,6 +1,6 @@
 <template>
   <div class="article">
-    <div class="article__image backdrop">
+    <div class="article__image">
       <div class="article__image__content">
         <section class="article__image__text" id="services">
           <h1>Våra tjänster</h1>
@@ -71,9 +71,8 @@ export default {
 
   &__image {
     padding: 8rem 1rem 4rem;
-    height: 580px;
-    @include setImageStyles("../../assets/article/interior-wood.jpg", 580px);
-    // background-color: rgb(26, 26, 26);
+    // @include setImageStyles("../../assets/article/interior-wood.jpg", 580px);
+    background-color: #435560;
 
     &__content {
       margin: auto;
@@ -84,6 +83,8 @@ export default {
       z-index: 1;
       color: #fff;
       position: relative;
+      margin: 0 0 5rem;
+      text-shadow: 0 0 10px rgba(#000, 0.2);
 
       h1 {
         &::before {

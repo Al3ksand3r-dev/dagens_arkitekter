@@ -37,8 +37,16 @@ export default {
         hash: "#services",
       },
       {
+        elName: "Försäljningsmaterial",
+        hash: "#material",
+      },
+      {
         url: "Permits",
-        label: "Hemsida",
+        label: "Brf hemsida",
+      },
+      {
+        elName: "Projektering & Rådgivning",
+        hash: "#project",
       },
       {
         url: "Contact",

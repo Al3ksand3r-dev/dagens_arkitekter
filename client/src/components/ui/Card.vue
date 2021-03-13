@@ -27,7 +27,8 @@ export default {
   padding: 4rem 2rem;
   text-align: center;
   align-items: center;
-  background: $creamWhite;
+  // background: $creamWhite;
+  background: #e8eae6;
   justify-content: space-around;
 
   span {

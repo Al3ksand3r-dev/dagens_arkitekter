@@ -31,25 +31,49 @@
         ]"
       />
     </app-header>
-    <About />
+    <app-section
+      title="Vi erbjuder våra kunder helhetslösningar från idé till verklighet."
+      titleSmall="Om oss"
+      scrollTo="about"
+      :imgUrl="{
+        first: 'interior-natural-sun',
+        second: 'interior-living-room',
+      }"
+    />
     <Services />
+    <app-section
+      title="Projektering & Rådgivning."
+      titleSmall="Våra projekt"
+      scrollTo="project"
+      :imgUrl="{
+        first: 'interior-natural-sun',
+        second: 'interior-living-room',
+      }"
+    />
+    <app-section
+      title="Försäljningsmaterial."
+      titleSmall="Välj material"
+      scrollTo="material"
+      :imgUrl="{
+        first: 'interior-natural-sun',
+        second: 'interior-living-room',
+      }"
+    />
   </div>
 </template>
 
 <script>
 import Slider from "@/components/ui/Slider.vue";
 import AppHeader from "@/components/layout/AppHeader.vue";
-import About from "@/components/articles/About.vue";
+import AppSection from "@/components/articles/AppSection.vue";
 import Services from "@/components/articles/Services.vue";
 export default {
   name: "Home",
   components: {
     Slider,
     AppHeader,
-    About,
+    AppSection,
     Services,
   },
 };
 </script>
-
-<style lang="scss" scoped></style>

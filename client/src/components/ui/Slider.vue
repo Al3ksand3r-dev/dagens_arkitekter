@@ -125,12 +125,16 @@ export default {
         margin: 0 0 1rem;
         letter-spacing: 2px;
         text-transform: uppercase;
+        word-break: break-all;
       }
 
       p {
         width: 100%;
-        font-size: 23px;
         max-width: 650px;
+
+        @include md() {
+          font-size: 23px;
+        }
       }
     }
 
