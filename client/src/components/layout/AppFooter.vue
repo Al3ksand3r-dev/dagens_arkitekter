@@ -114,10 +114,13 @@ export default {
     gap: 0 4rem;
     width: 100%;
     margin: auto;
-    display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
     position: relative;
+
+    @include lg() {
+      display: flex;
+    }
 
     &__header {
       img {
@@ -146,15 +149,21 @@ export default {
       &__list {
         list-style: none;
 
+        li {
+          display: block;
+          margin: 0 0 15px;
+        }
+
         a {
           color: #fff;
-          display: block;
           font-size: 14px;
-          margin: 0 0 15px;
-          transition: 0.3s;
+          transition: all 0.2s ease;
           text-decoration: none;
-          &:hover {
-            padding-left: 0.25rem;
+
+          @include lg() {
+            &:hover {
+              padding-left: 0.25rem;
+            }
           }
         }
       }

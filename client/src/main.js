@@ -10,7 +10,7 @@ import "animate.css";
 import VueScrollTo from "vue-scrollto";
 
 Vue.use(VueScrollTo, {
-  offset: 0,
+  offset: -50,
 });
 Vue.use(VueCompositionAPI);
 Vue.use(VueCarousel);

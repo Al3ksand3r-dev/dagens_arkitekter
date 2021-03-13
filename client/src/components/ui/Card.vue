@@ -34,10 +34,12 @@ export default {
   span {
     font-size: 3rem;
     margin: 0 0 20px;
+    margin-top: auto;
   }
 
   &__title {
     font-size: 20px;
+    margin-bottom: auto;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     &::before {
@@ -45,9 +47,9 @@ export default {
     }
   }
 
-  &__description {
-    font-size: 15px;
-    color: #717081;
-  }
+  // &__description {
+  //   font-size: 15px;
+  //   color: #717081;
+  // }
 }
 </style>

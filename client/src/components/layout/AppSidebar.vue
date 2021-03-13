@@ -11,5 +11,3 @@ export default {
   name: "AppSidebar",
 };
 </script>
-
-<style lang="scss" scoped></style>
