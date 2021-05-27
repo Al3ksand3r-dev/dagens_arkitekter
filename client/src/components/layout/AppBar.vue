@@ -38,10 +38,10 @@ export default {
   justify-content: space-between;
 
   &__site-link {
-    padding: 5px 0 0 10px;
+    padding: 0 0 0 5px;
     text-decoration: none;
     img {
-      width: 80px;
+      width: 100px;
       display: inline-block;
       margin: -10px 0 0 -10px;
     }

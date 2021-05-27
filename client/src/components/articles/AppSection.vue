@@ -70,6 +70,7 @@ export default {
   &--grid {
     display: grid;
     gap: 2rem;
+    padding: 8rem 1rem;
 
     @include md() {
       grid-template-columns: repeat(2, 1fr);
@@ -81,7 +82,7 @@ export default {
     margin: 0 0 22px;
     h1 {
       display: flex;
-      font-size: 14px;
+      font-size: 18px;
       font-weight: 400;
       margin: 0 0 22px;
       align-items: center;
@@ -99,7 +100,7 @@ export default {
 
     h2 {
       margin: 0 0 35px;
-      word-break: break-all;
+      font-weight: 400;
 
       @include md() {
         margin: 0 0 50px;
@@ -115,6 +116,7 @@ export default {
     width: 100%;
     background: no-repeat center center/cover;
     height: 580px;
+    box-shadow: 0px 4px 7px 0px rgba(#000, 0.3);
   }
 }
 </style>

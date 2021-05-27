@@ -21,13 +21,11 @@ export default {
   width: 100%;
   margin: auto;
   display: flex;
-  height: 400px;
+  height: 350px;
   flex-flow: column;
   border-radius: 7px;
-  padding: 4rem 2rem;
   text-align: center;
   align-items: center;
-  // background: $creamWhite;
   background: #e8eae6;
   justify-content: space-around;
 
@@ -39,6 +37,7 @@ export default {
 
   &__title {
     font-size: 20px;
+    font-weight: 500;
     margin-bottom: auto;
     letter-spacing: 0.5px;
     text-transform: uppercase;

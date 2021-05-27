@@ -6,7 +6,7 @@
           <h1>Våra tjänster</h1>
           <h2>
             Med stort intresse och engagemang erbjuder vi våra kunder
-            projektering & rådgivning med 2D & 3D ritningar inom...
+            projektering & rådgivning inom
           </h2>
         </section>
       </div>
@@ -71,7 +71,6 @@ export default {
 
   &__image {
     padding: 8rem 1rem 4rem;
-    // @include setImageStyles("../../assets/article/interior-wood.jpg", 580px);
     background-color: #435560;
 
     &__content {
@@ -87,15 +86,20 @@ export default {
       text-shadow: 0 0 10px rgba(#000, 0.2);
 
       h1 {
+        font-size: 18px;
         &::before {
           background: #fff;
         }
+      }
+
+      h2 {
+        font-weight: 400;
       }
     }
   }
 
   .grid {
-    gap: 2rem;
+    gap: 3rem;
     padding: 0 1rem;
     max-width: 1200px;
     margin: -6rem auto 0;

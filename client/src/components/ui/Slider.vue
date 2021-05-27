@@ -126,11 +126,13 @@ export default {
         letter-spacing: 2px;
         text-transform: uppercase;
         word-break: break-all;
+        font-weight: 300;
       }
 
       p {
         width: 100%;
         max-width: 650px;
+        font-weight: 200;
 
         @include md() {
           font-size: 23px;

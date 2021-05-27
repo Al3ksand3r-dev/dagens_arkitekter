@@ -6,27 +6,22 @@
           {
             url: 'main-showcase-first',
             title: 'Dagens Arkitekter',
-            text:
-              'Dagens Arkitekter är ett modernt företag som tar fram praktiska och innovativa lösningar anpassade till livsstil och miljö.',
+            text: 'Dagens Arkitekter är ett modernt företag som tar fram praktiska och innovativa lösningar anpassade till livsstil och miljö',
           },
           {
             url: 'main-showcase-second',
             title: 'Projektering & Rådgivning',
-            text:
-              'Dagens Arkitekter utvecklar tillsammans mer er unika och trivsamma miljöer för människor att växa i.',
+            text: 'Dagens Arkitekter utvecklar unika och trivsamma miljöer för människor att växa i',
           },
           {
             url: 'main-showcase-third',
-            title: 'Försäljningsmaterial',
-            text: 'Exteriör & interiör - 2D & 3D bilder.',
+            title: 'Visualisering',
+            text: 'Fotorealistiska interiör & exteriör 3D-bilder',
           },
           {
             url: 'main-showcase-fourth',
-            title: 'Hemsida',
-            text: 'Projektsida med solstudie & bostadsväljare.',
-          },
-          {
-            url: 'main-showcase-fifth',
+            title: 'Projekthemsida',
+            text: 'Framtagning av projekthemsida för dina projekt',
           },
         ]"
       />
@@ -43,20 +38,30 @@
     <Services />
     <app-section
       title="Projektering & Rådgivning."
-      titleSmall="Våra projekt"
+      titleSmall=""
       scrollTo="project"
       :imgUrl="{
-        first: 'interior-natural-sun',
-        second: 'interior-living-room',
+        first: 'exterior_1',
+        second: 'hus_4',
       }"
     />
     <app-section
-      title="Försäljningsmaterial."
-      titleSmall="Välj material"
+      title="Visualisering"
+      titleSmall=""
       scrollTo="material"
       :imgUrl="{
-        first: 'interior-natural-sun',
-        second: 'interior-living-room',
+        first: 'interior_1',
+        second: 'interior_2',
+      }"
+    />
+
+    <app-section
+      title="Projekthemsida"
+      titleSmall=""
+      scrollTo="material"
+      :imgUrl="{
+        first: 'interior_1',
+        second: 'interior_2',
       }"
     />
   </div>

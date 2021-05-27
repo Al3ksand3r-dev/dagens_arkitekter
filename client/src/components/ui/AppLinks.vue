@@ -1,6 +1,11 @@
 <template>
   <ul
-    class="navigation-list navigation-list--flex navigation-list--col navigation-list--vCenter"
+    class="
+      navigation-list
+      navigation-list--flex
+      navigation-list--col
+      navigation-list--vCenter
+    "
   >
     <li
       v-for="link in links"
@@ -58,33 +63,33 @@ export default {
     const subMenu = ref(false);
     const links = ref([
       {
-        elName: "Våra tjänster",
-        hash: "#services",
-      },
-      {
         elName: "Om oss",
         hash: "#about",
       },
       {
-        url: "Contact",
-        label: "Kontakta oss",
+        elName: "Våra tjänster",
+        hash: "#services",
       },
       {
         label: "Mer",
         subLinks: [
           {
-            elName: "Försäljningsmaterial",
-            hash: "#material",
-          },
-          {
-            elName: "Brf hemsida",
-            hash: "#brf",
-          },
-          {
             elName: "Projektering & Rådgivning",
             hash: "#project",
           },
+          {
+            elName: "Visualisering",
+            hash: "#material",
+          },
+          {
+            elName: "Projekthemsida",
+            hash: "#brf",
+          },
         ],
+      },
+      {
+        url: "Contact",
+        label: "Kontakta oss",
       },
     ]);
 
